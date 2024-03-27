@@ -16,13 +16,13 @@
          $scope.operator=" + "
          $scope.compute=function(){
          switch($scope.operator){
-         case 'add': $scope.result=$scope.num1 + $scope.num2
+         case '+': $scope.result=$scope.num1 + $scope.num2
          break
-         case 'sub': $scope.result=$scope.num1 - $scope.num2
+         case '-': $scope.result=$scope.num1 - $scope.num2
          break
-         case 'mul': $scope.result=$scope.num1 * $scope.num2
+         case '*': $scope.result=$scope.num1 * $scope.num2
          break
-         case 'div': if($scope.num2==0){
+         case '/': if($scope.num2==0){
          alert("Divide by zero error")
          }
          else{
